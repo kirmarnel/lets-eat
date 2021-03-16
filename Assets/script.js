@@ -22,6 +22,7 @@ const veg = document.querySelector('#veg')
 const seafood = document.querySelector('#seafood')
 const mealDiv = document.querySelector('#mealDiv')
 
+// Beef Option
 const beefUrl ='https://www.themealdb.com/api/json/v1/1/lookup.php?i=52824'
 function getBeef(event) {
     
@@ -40,3 +41,21 @@ ingredients.append(ione)
 }
 beef.addEventListener('click' , getBeef);
 
+// Seafood Option
+const seafoodUrl ='https://www.themealdb.com/api/json/v1/1/lookup.php?i=52918'
+function getSeafood(event) {
+    
+    event.preventDefault()
+    console.log('test')
+    fetch(seafoodUrl)
+    .then(function(response){
+        return response.json();
+    }).then(function(data){
+        console.log(data)
+        name.textContent=data.meals[0].strMeal
+        instructions.textContent=data.meals[0].strInstructions
+        const ione = data.meals[0].strIngredient1
+ingredients.append(ione)
+    })
+}
+seafood.addEventListener('click' , getSeafood);
