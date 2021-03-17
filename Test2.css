@@ -52,15 +52,12 @@ header h1 {
 }
 
 
-#recipes {
-    display: flex;
-}
-
 /* recipe container appears centered over text*/
 .recipeContainer {
     position: relative;
     text-align: center;
     color: white;
+
 }
 .centered {
     position: absolute;
@@ -68,12 +65,9 @@ header h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     padding-top: 50%;
-
-#recipes {
-    display: flex;
 }
 
-#mealDiv {
-    width: 
-      main
+h2 {
+    font-size: larger;
+    font-weight: bold;
 }
