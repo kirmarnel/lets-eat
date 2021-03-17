@@ -5,6 +5,14 @@ header{
     margin-bottom: 0px;
 }
 
+/*body css makes imagbe background*/
+body{
+    background-image: url(./Assets/Jumbotron_Dinner_Capture_.png);
+    background-color:black;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
 header h1 {
     font-size: 30pt;
     color:white;
@@ -14,8 +22,8 @@ header h1 {
     padding: 20px;
     margin-bottom: 20pt;
     flex-wrap: wrap;
-
 }
+
 /* Navbar container */
 .navbar {
   overflow: hidden;
@@ -43,8 +51,21 @@ header h1 {
     margin:0;
 }
 
-img {
-    margin: 0px;
-    padding: 0px;
+
+#recipes {
+    display: flex;
 }
 
+/* recipe container appears centered over text*/
+.recipeContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 50%;
+}
