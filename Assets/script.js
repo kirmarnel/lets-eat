@@ -86,9 +86,17 @@ function getSeafood(event) {
     }).then(function(data){
         console.log(data)
         name.textContent=data.meals[0].strMeal
-        instructions.textContent=data.meals[0].strInstructions
+        instructions.textContent='Instructions: ' + data.meals[0].strInstructions
         const ione = data.meals[0].strIngredient1
-ingredients.append(ione)
+        const itwo = data.meals[0].strIngredient2
+        const ithree = data.meals[0].strIngredient3
+        const ifour = data.meals[0].strIngredient4
+        const ifive = data.meals[0].strIngredient5
+        const isix = data.meals[0].strIngredient6
+        const iseven = data.meals[0].strIngredient7
+        const ieight = data.meals[0].strIngredient8
+        const inine = data.meals[0].strIngredient9
+ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive,', ', isix,', ', iseven,', ', ieight,', ', inine)
     })
 }
 seafood.addEventListener('click' , getSeafood);
