@@ -4,7 +4,7 @@ const ingredients = document.querySelector('#ingredients')
 //Drink Variables
 const ale = document.querySelector('#ale')
 const arm = document.querySelector('#arm')
-const bourban = document.querySelector('#bourban')
+const bourbon = document.querySelector('#bourbon')
 const brandy = document.querySelector('#brandy')
 const vodka = document.querySelector('#vodka')
 const scotch = document.querySelector('#scotch')
@@ -213,6 +213,7 @@ ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,'
     })
     
 }
+
 pasta.addEventListener('click', getPasta);
 
 //Vodka
@@ -226,14 +227,170 @@ function getVodka(event) {
         return response.json();
     }).then (function(data){
         console.log(data)
-        name.textContent=data.drinks[0].strDrinks
+        name.textContent=data.drinks[0].strDrink
         instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
-        const ione = data.drinks[0].strIngredient1
-        const itwo = data.drinks[0].strIngredient2
-        const ithree = data.drinks[0].strIngredient3
-        const ifour = data.drinks[0].strIngredient4
-        const ifive = data.drinks[0].strIngredient5
+        const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
+        const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
+        const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
+        const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
+        const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
 ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
     })
 }
 vodka.addEventListener('click' , getVodka);
+
+pasta.addEventListener('click', getPasta);
+
+//Gin
+const ginUrl='https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11005'
+function getGin(event) {
+    event.preventDefault()
+    console.log ('test')
+    fetch(ginUrl)
+    .then(function(response){
+        return response.json();
+    }).then (function(data){
+        console.log(data)
+        name.textContent=data.drinks[0].strDrink
+        instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
+        const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
+        const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
+        const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
+        const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
+ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+    })
+}
+gin.addEventListener('click' , getGin);
+
+//Bourbon
+const bourbonUrl='https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11001'
+function getBourbon(event) {
+    event.preventDefault()
+    console.log ('test')
+    fetch(bourbonUrl)
+    .then(function(response){
+        return response.json();
+    }).then (function(data){
+        console.log(data)
+        name.textContent=data.drinks[0].strDrink
+        instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
+        const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
+        const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
+        const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
+        const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
+ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+    })
+}
+bourbon.addEventListener('click' , getBourbon);
+
+//Tequila
+const tequilaUrl='https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=16158'
+function getTequila(event) {
+    event.preventDefault()
+    console.log ('test')
+    fetch(tequilaUrl)
+    .then(function(response){
+        return response.json();
+    }).then (function(data){
+        console.log(data)
+        name.textContent=data.drinks[0].strDrink
+        instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
+        const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
+        const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
+        const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
+        const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
+ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+    })
+}
+tequila.addEventListener('click' , getTequila);
+
+//Amaretto
+const armUrl='https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=13202'
+function getArm(event) {
+    event.preventDefault()
+    console.log ('test')
+    fetch(armUrl)
+    .then(function(response){
+        return response.json();
+    }).then (function(data){
+        console.log(data)
+        name.textContent=data.drinks[0].strDrink
+        instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
+        const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
+        const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
+        const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
+        const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
+ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+    })
+}
+arm.addEventListener('click' , getArm);
+
+//Brandy
+const brandyUrl='https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=12198'
+function getBrandy(event) {
+    event.preventDefault()
+    console.log ('test')
+    fetch(brandyUrl)
+    .then(function(response){
+        return response.json();
+    }).then (function(data){
+        console.log(data)
+        name.textContent=data.drinks[0].strDrink
+        instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
+        const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
+        const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
+        const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
+        const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
+ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+    })
+}
+brandy.addEventListener('click' , getBrandy);
+
+//Ale
+const aleUrl='https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=13202'
+function getAle(event) {
+    event.preventDefault()
+    console.log ('test')
+    fetch(aleUrl)
+    .then(function(response){
+        return response.json();
+    }).then (function(data){
+        console.log(data)
+        name.textContent=data.drinks[0].strDrink
+        instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
+        const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
+        const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
+        const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
+        const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
+ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+    })
+}
+ale.addEventListener('click' , getAle);
+
+//Scotch
+const scotchUrl='https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11369'
+function getScotch(event) {
+    event.preventDefault()
+    console.log ('test')
+    fetch(scotchUrl)
+    .then(function(response){
+        return response.json();
+    }).then (function(data){
+        console.log(data)
+        name.textContent=data.drinks[0].strDrink
+        instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
+        const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
+        const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
+        const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
+        const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
+ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+    })
+}
+scotch.addEventListener('click' , getScotch);
