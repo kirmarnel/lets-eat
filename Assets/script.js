@@ -393,4 +393,11 @@ function getScotch(event) {
 ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
     })
 }
+<<<<<<< HEAD
 scotch.addEventListener('click' , getScotch);
+=======
+vodka.addEventListener('click' , getVodka);
+
+pasta.addEventListener('click', getPasta);
+
+>>>>>>> main
