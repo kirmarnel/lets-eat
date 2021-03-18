@@ -213,6 +213,7 @@ ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,'
     })
     
 }
+
 pasta.addEventListener('click', getPasta);
 
 //Vodka
@@ -237,3 +238,6 @@ ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,'
     })
 }
 vodka.addEventListener('click' , getVodka);
+
+pasta.addEventListener('click', getPasta);
+
