@@ -1,6 +1,7 @@
 const name = document.querySelector('#name')
 const instructions = document.querySelector('#instructions')
 const ingredients = document.querySelector('#ingredients')
+const recipes = document.querySelector('#recipes')
 //Drink Variables
 const ale = document.querySelector('#ale')
 const arm = document.querySelector('#arm')
@@ -35,15 +36,21 @@ function getBeef(event) {
         console.log(data)
         name.textContent=data.meals[0].strMeal
         instructions.textContent='Instructions: ' + data.meals[0].strInstructions
-        const ione = data.meals[0].strIngredient1
-        const itwo = data.meals[0].strIngredient2
-        const ithree = data.meals[0].strIngredient3
-        const ifour = data.meals[0].strIngredient4
-        const ifive = data.meals[0].strIngredient5
-        const isix = data.meals[0].strIngredient6
-        const iseven = data.meals[0].strIngredient7
-        const ieight = data.meals[0].strIngredient8
+        let img = document.createElement('img')
+        img.setAttribute ("src", `https://www.themealdb.com/images/media/meals/ssrrrs1503664277.jpg`)
+        var src = document.getElementById("foodImg")
+        src.appendChild(img);
+        $("#foodImg").append(img)
+        const ione = data.meals[0].strMeasure1 + ' ' + data.meals[0].strIngredient1
+        const itwo = data.meals[0].strMeasure2 + ' ' + data.meals[0].strIngredient2
+        const ithree = data.meals[0].strMeasure3 + ' ' + data.meals[0].strIngredient3
+        const ifour = data.meals[0].strMeasure4 + ' ' + data.meals[0].strIngredient4
+        const ifive = data.meals[0].strMeasure5 + ' ' + data.meals[0].strIngredient5
+        const isix = data.meals[0].strMeasure6 + ' ' + data.meals[0].strIngredient6
+        const iseven = data.meals[0].strMeasure7 + ' ' + data.meals[0].strIngredient7
+        const ieight =data.meals[0].strMeasure8 + ' ' + data.meals[0].strIngredient8
 ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive,', ', isix,', ', iseven,', ', ieight)
+getRecipes()      
     })
 }
 beef.addEventListener('click' , getBeef);
@@ -60,16 +67,17 @@ function getChicken(event) {
         console.log(data)
         name.textContent=data.meals[0].strMeal
         instructions.textContent='Instructions: ' + data.meals[0].strInstructions
-        const ione = data.meals[0].strIngredient1
-        const itwo = data.meals[0].strIngredient2
-        const ithree = data.meals[0].strIngredient3
-        const ifour = data.meals[0].strIngredient4
-        const ifive = data.meals[0].strIngredient5
-        const isix = data.meals[0].strIngredient6
-        const iseven = data.meals[0].strIngredient7
-        const ieight = data.meals[0].strIngredient8
-        const inine = data.meals[0].strIngredient9
+        const ione = data.meals[0].strMeasure1 + ' ' + data.meals[0].strIngredient1
+        const itwo = data.meals[0].strMeasure2 + ' ' + data.meals[0].strIngredient2
+        const ithree = data.meals[0].strMeasure3 + ' ' + data.meals[0].strIngredient3
+        const ifour = data.meals[0].strMeasure4 + ' ' + data.meals[0].strIngredient4
+        const ifive = data.meals[0].strMeasure5 + ' ' + data.meals[0].strIngredient5
+        const isix = data.meals[0].strMeasure6 + ' ' + data.meals[0].strIngredient6
+        const iseven = data.meals[0].strMeasure7 + ' ' + data.meals[0].strIngredient7
+        const ieight =data.meals[0].strMeasure8 + ' ' + data.meals[0].strIngredient8
+        const inine = data.meals[0].strMeasure9 + ' ' + data.meals[0].strIngredient9
 ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive,', ', isix,', ', iseven,', ', ieight,', ', inine)
+ getRecipes()      
     })
 }
 chicken.addEventListener('click' , getChicken);
@@ -87,16 +95,17 @@ function getSeafood(event) {
         console.log(data)
         name.textContent=data.meals[0].strMeal
         instructions.textContent='Instructions: ' + data.meals[0].strInstructions
-        const ione = data.meals[0].strIngredient1
-        const itwo = data.meals[0].strIngredient2
-        const ithree = data.meals[0].strIngredient3
-        const ifour = data.meals[0].strIngredient4
-        const ifive = data.meals[0].strIngredient5
-        const isix = data.meals[0].strIngredient6
-        const iseven = data.meals[0].strIngredient7
-        const ieight = data.meals[0].strIngredient8
-        const inine = data.meals[0].strIngredient9
+        const ione = data.meals[0].strMeasure1 + ' ' + data.meals[0].strIngredient1
+        const itwo = data.meals[0].strMeasure2 + ' ' + data.meals[0].strIngredient2
+        const ithree = data.meals[0].strMeasure3 + ' ' + data.meals[0].strIngredient3
+        const ifour = data.meals[0].strMeasure4 + ' ' + data.meals[0].strIngredient4
+        const ifive = data.meals[0].strMeasure5 + ' ' + data.meals[0].strIngredient5
+        const isix = data.meals[0].strMeasure6 + ' ' + data.meals[0].strIngredient6
+        const iseven = data.meals[0].strMeasure7 + ' ' + data.meals[0].strIngredient7
+        const ieight =data.meals[0].strMeasure8 + ' ' + data.meals[0].strIngredient8
+        const inine = data.meals[0].strMeasure9 + ' ' + data.meals[0].strIngredient9
 ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive,', ', isix,', ', iseven,', ', ieight,', ', inine)
+getRecipes()  
     })
 }
 seafood.addEventListener('click' , getSeafood);
@@ -126,7 +135,8 @@ function getPork(event) {
         const inine = data.meals[0].strMeasure9 + ' ' + data.meals[0].strIngredient9
         const iten = data.meals[0].strMeasure10 + ' ' + data.meals[0].strIngredient10
 ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive,', ', isix,', ', iseven,', ', ieight,', ', inine,', ',iten)
-    })
+getRecipes()      
+})
 }
 pork.addEventListener('click', getPork);
 
@@ -154,7 +164,8 @@ function getVeggies(event){
         const inine = data.meals[0].strMeasure9 + ' ' + data.meals[0].strIngredient9
         const iten = data.meals[0].strMeasure10 + ' ' + data.meals[0].strIngredient10
 ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive,', ', isix,', ', iseven,', ', ieight,', ', inine,', ',iten)
-    })
+getRecipes()      
+})
 }
 veg.addEventListener('click', getVeggies);
 
@@ -183,7 +194,8 @@ function getLamb(event){
         const iten = data.meals[0].strMeasure10 + ' ' + data.meals[0].strIngredient10
         const ieleven = data.meals[0].strMeasure11+ ' ' + data.meals[0].strIngredient11
 ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive,', ', isix,', ', iseven,', ', ieight,', ', inine,', ',iten,' ,', ieleven)
-    })
+getRecipes()     
+})
 
 }
 lamb.addEventListener('click', getLamb);
@@ -210,10 +222,9 @@ function getPasta (event){
         const iseven = data.meals[0].strMeasure7 + ' ' + data.meals[0].strIngredient7
        
 ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive,', ', isix,', ', iseven)
-    })
-    
+getRecipes()      
+}) 
 }
-
 pasta.addEventListener('click', getPasta);
 
 //Vodka
@@ -235,11 +246,10 @@ function getVodka(event) {
         const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
         const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
 ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
-    })
+getRecipes()      
+})
 }
 vodka.addEventListener('click' , getVodka);
-
-pasta.addEventListener('click', getPasta);
 
 //Gin
 const ginUrl='https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11005'
@@ -259,7 +269,8 @@ function getGin(event) {
         const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
         const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
 ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
-    })
+getRecipes()      
+})
 }
 gin.addEventListener('click' , getGin);
 
@@ -281,7 +292,8 @@ function getBourbon(event) {
         const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
         const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
 ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
-    })
+getRecipes()      
+})
 }
 bourbon.addEventListener('click' , getBourbon);
 
@@ -303,7 +315,8 @@ function getTequila(event) {
         const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
         const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
 ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
-    })
+getRecipes()      
+})
 }
 tequila.addEventListener('click' , getTequila);
 
@@ -325,7 +338,8 @@ function getArm(event) {
         const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
         const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
 ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
-    })
+getRecipes()      
+})
 }
 arm.addEventListener('click' , getArm);
 
@@ -347,7 +361,8 @@ function getBrandy(event) {
         const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
         const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
 ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
-    })
+getRecipes()      
+})
 }
 brandy.addEventListener('click' , getBrandy);
 
@@ -369,6 +384,7 @@ function getAle(event) {
         const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
         const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
 ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+getRecipes()  
     })
 }
 ale.addEventListener('click' , getAle);
@@ -391,13 +407,11 @@ function getScotch(event) {
         const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
         const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
 ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
-    })
+getRecipes()    
+})
 }
-<<<<<<< HEAD
 scotch.addEventListener('click' , getScotch);
-=======
-vodka.addEventListener('click' , getVodka);
 
-pasta.addEventListener('click', getPasta);
-
->>>>>>> main
+function getRecipes() {
+    recipes.style.visibility = "visible";
+}

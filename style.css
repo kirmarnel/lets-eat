@@ -6,12 +6,13 @@ header{
 }
 
 /*body css makes imagbe background*/
-body{
+body {
     background-image: url(./Assets/Jumbotron_Dinner_Capture_.png);
     background-color:black;
     background-repeat: no-repeat;
     background-size: auto;
 }
+
 
 header h1 {
     font-size: 30pt;
@@ -56,8 +57,16 @@ header h1 {
     position: relative;
     text-align: center;
     color: white;
-
 }
+
+#recipes {
+    background: radial-gradient(circle, rgb(236, 197, 67) 0%, rgba(167, 129, 49, 0.954) 100%);
+    box-shadow: 1px 1px 1px 1px rgb(58, 54, 54);
+    border-radius: 3px;
+    padding: 20px;
+    visibility: hidden;
+}
+
 .centered {
     position: absolute;
     top: 50%;
@@ -69,4 +78,24 @@ header h1 {
 h2 {
     font-size: larger;
     font-weight: bold;
+}
+
+#name {
+margin-bottom: 15px;
+}
+
+#ingredients{
+margin-bottom: 15px;
+}
+
+#instructions {
+    margin-bottom: 15px;
+}
+
+#foodImg {
+    max-height: 200px;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
 }
