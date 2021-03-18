@@ -4,11 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-</head>
+    <title>Let's Eat</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel = "stylesheet" href = "Test2.css">
+    <title>Let's Eat!</title>
 
+</head>
 <body>
-<script src=script.js></script>  
+    <header>
+        <h1>Let's Eat!</h1>
+        <div class="p-10" id="divButtons">
+            <div class="dropdown inline-block relative">
+              <button class="font-semibold py-2 px-4 rounded inline-flex items-center">
+                <span class="mr-1">Drink Option</span>
+                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+              </button>
+              <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                <li class="Ale"><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" id="ale" href="">Ale</a></li>
+                <li class="Armeretto"><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" id="arm" href="">Armeretto</a></li>
+                <li class="Bourban"><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" id="bourban" href="">Bourban</a></li>
+                <li class="Brandy"><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" id="brandy" href="">Brandy</a></li>
+                <li class="Vodka"><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" id="vodka" href="">Vodka</a></li>
+                <li class="Scotch"><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" id="scotch" href="">Scotch</a></li>
+                <li class="Gin"><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" id="gin" href="">Gin</a></li>
+                <li class="Tequilla"><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" id="tequila" href="">Tequilla</a></li>
+            </ul>
+            </div>
+          </div>
+        <div class="p-10" id="divButtons">
+            <div class="dropdown inline-block relative">
+              <button class="font-semibold py-2 px-4 rounded inline-flex items-center">
+                <span class="mr-1">Food Option</span>
+                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+            </button>
+              <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                <li class="Beef"><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" id="beef" href="">Beef</a></li>
+                <li class="Chicken"><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" id="chicken" href="">Chicken</a></li>
+                <li class="Goat"><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" id="goat" href="">Goat</a></li>
+                <li class="Lamb"><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" id="lamb" href="">Lamb</a></li>
+                <li class="Pasta"><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" id="pasta" href="">Pasta</a></li>
+                <li class="Pork"><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" id="pork" href="">Pork</a></li>
+                <li class="Pork"><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" id="veg" href="">Vegetarian</a></li>
+                <li class="Seafood"><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" id="seafood" href="">Seafood</a></li>
+              </ul>
+            </div>
+    </header>
+
+    <div class="recipeContainer">
+      <div class="centered">
+        <div id='recipes'>
+          <div id='mealDiv'></div>
+            <h2 id='name'></h2>
+            <p id='ingredients'></p>
+            <p id='instructions'></p>
+          <div id='drinkDiv'></div>
+        </div>
+      </div>
+    </div>
+<script src="Assets/script.js"></script>
 </body>
 </html>
