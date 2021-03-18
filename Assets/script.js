@@ -213,4 +213,31 @@ ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,'
     })
     
 }
+
 pasta.addEventListener('click', getPasta);
+
+//Vodka
+
+const vodkaUrl='https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=14622'
+function getVodka(event) {
+    event.preventDefault()
+    console.log ('test')
+    fetch(vodkaUrl)
+    .then(function(response){
+        return response.json();
+    }).then (function(data){
+        console.log(data)
+        name.textContent=data.drinks[0].strDrinks
+        instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        const ione = data.drinks[0].strIngredient1
+        const itwo = data.drinks[0].strIngredient2
+        const ithree = data.drinks[0].strIngredient3
+        const ifour = data.drinks[0].strIngredient4
+        const ifive = data.drinks[0].strIngredient5
+ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+    })
+}
+vodka.addEventListener('click' , getVodka);
+
+pasta.addEventListener('click', getPasta);
+
