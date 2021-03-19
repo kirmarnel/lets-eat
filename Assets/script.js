@@ -259,6 +259,16 @@ function getVodka(event) {
         return response.json();
     }).then (function(data){
         console.log(data)
+
+        drinkName.textContent=data.drinks[0].strDrink
+        drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
+        const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
+        const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
+        const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
+        const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
+drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+
         name.textContent=data.drinks[0].strDrink
         instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         let img = document.createElement('img')
@@ -272,6 +282,7 @@ function getVodka(event) {
         const ifour = data.drinks[0].strMeasure4 + ' ' + data.drinks[0].strIngredient4
         const ifive = data.drinks[0].strMeasure5 + ' ' + data.drinks[0].strIngredient5
 ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+
 getRecipes()      
 })
 }
@@ -287,6 +298,16 @@ function getGin(event) {
         return response.json();
     }).then (function(data){
         console.log(data)
+
+        drinkName.textContent=data.drinks[0].strDrink
+        drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
+        const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
+        const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
+        const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
+        const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
+drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+
         name.textContent=data.drinks[0].strDrink
         instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         let img = document.createElement('img')
@@ -298,6 +319,7 @@ function getGin(event) {
         const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
         const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
 ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree)
+
 getRecipes()      
 })
 }
@@ -313,6 +335,16 @@ function getBourbon(event) {
         return response.json();
     }).then (function(data){
         console.log(data)
+
+        drinkName.textContent=data.drinks[0].strDrink
+        drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
+        const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
+        const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
+        const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
+        const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
+drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+
         name.textContent=data.drinks[0].strDrink
         instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         let img = document.createElement('img')
@@ -340,6 +372,16 @@ function getTequila(event) {
         return response.json();
     }).then (function(data){
         console.log(data)
+
+        drinkName.textContent=data.drinks[0].strDrink
+        drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
+        const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
+        const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
+        const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
+        const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
+drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+
         name.textContent=data.drinks[0].strDrink
         instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         let img = document.createElement('img')
@@ -353,6 +395,7 @@ function getTequila(event) {
         const ifour = data.drinks[0].strMeasure4 + ' ' + data.drinks[0].strIngredient4
        
 ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour)
+
 getRecipes()      
 })
 }
@@ -368,6 +411,16 @@ function getArm(event) {
         return response.json();
     }).then (function(data){
         console.log(data)
+
+        drinkName.textContent=data.drinks[0].strDrink
+        drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
+        const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
+        const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
+        const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
+        const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
+drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+
         name.textContent=data.drinks[0].strDrink
         instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         let img = document.createElement('img')
@@ -381,6 +434,7 @@ function getArm(event) {
         const ifour = data.drinks[0].strMeasure4 + ' ' + data.drinks[0].strIngredient4
         const ifive = data.drinks[0].strMeasure5 + ' ' + data.drinks[0].strIngredient5
 ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+
 getRecipes()      
 })
 }
@@ -396,6 +450,16 @@ function getBrandy(event) {
         return response.json();
     }).then (function(data){
         console.log(data)
+
+        drinkName.textContent=data.drinks[0].strDrink
+        drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
+        const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
+        const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
+        const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
+        const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
+drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+
         name.textContent=data.drinks[0].strDrink
         instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         let img = document.createElement('img')
@@ -407,6 +471,7 @@ function getBrandy(event) {
         const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
       
 ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree)
+
 getRecipes()      
 })
 }
@@ -422,18 +487,23 @@ function getAle(event) {
         return response.json();
     }).then (function(data){
         console.log(data)
+
+        drinkName.textContent=data.drinks[0].strDrink
+        drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+
         name.textContent=data.drinks[0].strDrink
         instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         let img = document.createElement('img')
         img.setAttribute ("src", `https://www.thecocktaildb.com/images/media/drink/d30z931503565384.jpg`)
         var src = document.getElementById("foodImg")
         src.appendChild(img);
+
         const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
         const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
         const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
         const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
         const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
-ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
 getRecipes()  
     })
 }
@@ -449,6 +519,16 @@ function getScotch(event) {
         return response.json();
     }).then (function(data){
         console.log(data)
+
+        drinkName.textContent=data.drinks[0].strDrink
+        drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
+        const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
+        const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
+        const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
+        const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
+drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+
         name.textContent=data.drinks[0].strDrink
         instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         let img = document.createElement('img')
