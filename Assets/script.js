@@ -238,14 +238,14 @@ function getVodka(event) {
         return response.json();
     }).then (function(data){
         console.log(data)
-        name.textContent=data.drinks[0].strDrink
-        instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        drinkName.textContent=data.drinks[0].strDrink
+        drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
         const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
         const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
         const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
         const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
-ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
 getRecipes()      
 })
 }
@@ -261,14 +261,14 @@ function getGin(event) {
         return response.json();
     }).then (function(data){
         console.log(data)
-        name.textContent=data.drinks[0].strDrink
-        instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        drinkName.textContent=data.drinks[0].strDrink
+        drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
         const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
         const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
         const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
         const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
-ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
 getRecipes()      
 })
 }
@@ -284,14 +284,14 @@ function getBourbon(event) {
         return response.json();
     }).then (function(data){
         console.log(data)
-        name.textContent=data.drinks[0].strDrink
-        instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        drinkName.textContent=data.drinks[0].strDrink
+        drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
         const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
         const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
         const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
         const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
-ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
 getRecipes()      
 })
 }
@@ -307,14 +307,14 @@ function getTequila(event) {
         return response.json();
     }).then (function(data){
         console.log(data)
-        name.textContent=data.drinks[0].strDrink
-        instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        drinkName.textContent=data.drinks[0].strDrink
+        drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
         const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
         const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
         const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
         const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
-ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
 getRecipes()      
 })
 }
@@ -330,14 +330,14 @@ function getArm(event) {
         return response.json();
     }).then (function(data){
         console.log(data)
-        name.textContent=data.drinks[0].strDrink
-        instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        drinkName.textContent=data.drinks[0].strDrink
+        drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
         const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
         const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
         const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
         const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
-ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
 getRecipes()      
 })
 }
@@ -353,14 +353,14 @@ function getBrandy(event) {
         return response.json();
     }).then (function(data){
         console.log(data)
-        name.textContent=data.drinks[0].strDrink
-        instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        drinkName.textContent=data.drinks[0].strDrink
+        drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
         const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
         const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
         const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
         const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
-ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
 getRecipes()      
 })
 }
@@ -376,14 +376,14 @@ function getAle(event) {
         return response.json();
     }).then (function(data){
         console.log(data)
-        name.textContent=data.drinks[0].strDrink
-        instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        drinkName.textContent=data.drinks[0].strDrink
+        drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
         const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
         const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
         const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
         const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
-ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
 getRecipes()  
     })
 }
@@ -399,14 +399,14 @@ function getScotch(event) {
         return response.json();
     }).then (function(data){
         console.log(data)
-        name.textContent=data.drinks[0].strDrink
-        instructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
+        drinkName.textContent=data.drinks[0].strDrink
+        drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
         const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
         const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
         const ifour = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient4
         const ifive = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient5
-ingredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
 getRecipes()    
 })
 }
