@@ -123,16 +123,16 @@ margin-bottom: 15px;
         align-items: center;
     }
 
-  }
+}
 
-  @media screen and (max-width: 450px) {
+ @media screen and (max-width: 450px) {
     #options {
         justify-content: center;
     }
       
 
   
-=======
+
 #close-btn{
     position: absolute;
     background: rgb(209, 209, 209);
