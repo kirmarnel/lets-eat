@@ -1,8 +1,11 @@
 header{
     background-color:black;
     width:100%;
-    height: 144px;
+    height: auto;
     margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 /*body css makes imagbe background*/
@@ -13,35 +16,21 @@ body {
     background-size: auto;
 }
 
+#options {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
 
 header h1 {
     font-size: 50pt;
     color:white;
     font-weight: bolder;
     font-family: 'Tangerine', cursive;
-    float: left;
-    flex-direction: column;
     padding: 20px;
     margin-bottom: 20pt;
     flex-wrap: wrap;
     margin-left: 15px;
-}
-
-/* Navbar container */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  font-family: Arial;
-}
-
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -128,3 +117,23 @@ margin-bottom: 15px;
 #food, #drinks{
     outline: none;
 }
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #options {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+  }
+
+  @media screen and (max-width: 450px) {
+    #options {
+        justify-content: center;
+    }
