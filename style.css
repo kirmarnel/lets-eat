@@ -98,6 +98,14 @@ margin-bottom: 15px;
     margin-bottom: 15px;
 }
 
+#drinkImg {
+    max-height: 300px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
 #close-btn{
     position: absolute;
     background: rgb(209, 209, 209);
@@ -135,5 +143,5 @@ margin-bottom: 15px;
 
   @media screen and (max-width: 450px) {
     #options {
-        justify-content: center;
+        justify-content: center;}
     }
