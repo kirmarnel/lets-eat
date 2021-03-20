@@ -290,7 +290,7 @@ function getGin(event) {
         drinkName.textContent=data.drinks[0].strDrink
         drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         let img = document.createElement('img')
-        img.setAttribute ("src", `https://www.thecocktaildb.com/images/media/drink/ttsvwy1472668781.jpg`)
+        img.setAttribute ("src", `https://www.thecocktaildb.com/images/media/drink/6ck9yi1589574317.jpg`)
         var src = document.getElementById("drinkImg")
         src.appendChild(img);
         $("#drinkImg").append(img)
@@ -299,7 +299,7 @@ function getGin(event) {
         const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
         const ifour = data.drinks[0].strMeasure4 + ' ' + data.drinks[0].strIngredient4
         const ifive = data.drinks[0].strMeasure5 + ' ' + data.drinks[0].strIngredient5
-drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree,)
 getRecipes()      
 })
 }
@@ -318,7 +318,7 @@ function getBourbon(event) {
         drinkName.textContent=data.drinks[0].strDrink
         drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         let img = document.createElement('img')
-        img.setAttribute ("src", `https://www.thecocktaildb.com/images/media/drink/ttsvwy1472668781.jpg`)
+        img.setAttribute ("src", `https://www.thecocktaildb.com/images/media/drink/vrwquq1478252802.jpg`)
         var src = document.getElementById("drinkImg")
         src.appendChild(img);
         $("#drinkImg").append(img)
@@ -346,7 +346,7 @@ function getTequila(event) {
         drinkName.textContent=data.drinks[0].strDrink
         drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         let img = document.createElement('img')
-        img.setAttribute ("src", `https://www.thecocktaildb.com/images/media/drink/ttsvwy1472668781.jpg`)
+        img.setAttribute ("src", `https://www.thecocktaildb.com/images/media/drink/srpxxp1441209622.jpg`)
         var src = document.getElementById("drinkImg")
         src.appendChild(img);
         $("#drinkImg").append(img)
@@ -355,7 +355,7 @@ function getTequila(event) {
         const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
         const ifour = data.drinks[0].strMeasure4 + ' ' + data.drinks[0].strIngredient4
         const ifive = data.drinks[0].strMeasure5 + ' ' + data.drinks[0].strIngredient5
-drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,)
 getRecipes()      
 })
 }
@@ -365,15 +365,15 @@ tequila.addEventListener('click' , getTequila);
 const armUrl='https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=13202'
 function getArm(event) {
     event.preventDefault()
-    console.log ('test')
     fetch(armUrl)
     .then(function(response){
         return response.json();
     }).then (function(data){
+        console.log(data)
         drinkName.textContent=data.drinks[0].strDrink
         drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         let img = document.createElement('img')
-        img.setAttribute ("src", `https://www.thecocktaildb.com/images/media/drink/ttsvwy1472668781.jpg`)
+        img.setAttribute ("src", `https://www.thecocktaildb.com/images/media/drink/d30z931503565384.jpg`)
         var src = document.getElementById("drinkImg")
         src.appendChild(img);
         $("#drinkImg").append(img)
@@ -401,7 +401,7 @@ function getBrandy(event) {
         drinkName.textContent=data.drinks[0].strDrink
         drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         let img = document.createElement('img')
-        img.setAttribute ("src", `https://www.thecocktaildb.com/images/media/drink/ttsvwy1472668781.jpg`)
+        img.setAttribute ("src", `https://www.thecocktaildb.com/images/media/drink/ewjxui1504820428.jpg`)
         var src = document.getElementById("drinkImg")
         src.appendChild(img);
         $("#drinkImg").append(img)
@@ -429,7 +429,7 @@ function getAle(event) {
         drinkName.textContent=data.drinks[0].strDrink
         drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         let img = document.createElement('img')
-        img.setAttribute ("src", `https://www.thecocktaildb.com/images/media/drink/ttsvwy1472668781.jpg`)
+        img.setAttribute ("src", `https://www.thecocktaildb.com/images/media/drink/d30z931503565384.jpg`)
         var src = document.getElementById("drinkImg")
         src.appendChild(img);
         $("#drinkImg").append(img)
@@ -457,7 +457,7 @@ function getScotch(event) {
         drinkName.textContent=data.drinks[0].strDrink
         drinkInstructions.textContent = 'Instructions: ' + data.drinks[0].strInstructions
         let img = document.createElement('img')
-        img.setAttribute ("src", `https://www.thecocktaildb.com/images/media/drink/ttsvwy1472668781.jpg`)
+        img.setAttribute ("src", `https://www.thecocktaildb.com/images/media/drink/q53l911582482518.jpg`)
         var src = document.getElementById("drinkImg")
         src.appendChild(img);
         $("#drinkImg").append(img)
@@ -466,7 +466,7 @@ function getScotch(event) {
         const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
         const ifour = data.drinks[0].strMeasure4 + ' ' + data.drinks[0].strIngredient4
         const ifive = data.drinks[0].strMeasure5 + ' ' + data.drinks[0].strIngredient5
-drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree,)
 getRecipes()      
 })
 }
