@@ -27,8 +27,13 @@ header h1 {
     color:white;
     font-weight: bolder;
     font-family: 'Tangerine', cursive;
+
+    padding: 20px;
+    margin-bottom: 10pt;
+
     padding: 10px;
     margin-bottom: 5pt;
+
     flex-wrap: wrap;
     margin-left: 15px;
 }
@@ -41,6 +46,8 @@ header h1 {
     float: right;
     color:white;
     margin:0;
+    font-family: 'Old Standard TT', serif;
+    font-size: 20px;
 }
 
 /* recipe container appears centered over text*/
@@ -48,6 +55,7 @@ header h1 {
     position: relative;
     text-align: center;
     color:black;
+    margin-top: 35px;
 }
 
 #recipes {
@@ -61,17 +69,29 @@ header h1 {
 }
 .move {
     height: 600px;
+
+    width: 90%;
+
     width: 100%;
+
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
 .centered {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 30%;
+
    position: absolute;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
     padding-top: 50%;
+
 }
 
 h2 {
@@ -146,9 +166,37 @@ margin-bottom: 15px;
         align-items: center;
     }
 
-  }
+}
 
   @media screen and (max-width: 450px) {
     #options {
-        justify-content: center;}
+        padding: 5px;
+        font-size: 10px;
+        justify-content: space-evenly;}
+    
+    header h1{
+
+        font-size: 55px;
+        margin-bottom: 0px;
     }
+    .centered{
+
+        margin-top: 200px;
+       
+    }
+    #divButtons{
+        font-size: 12px;
+    }
+
+    .p-10{
+
+        padding: 0.5rem
+    }
+
+    #recipes{
+
+        margin-top: 55px;
+    }
+  }
+ 
+  
