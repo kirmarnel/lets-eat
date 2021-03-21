@@ -23,12 +23,12 @@ body {
 }
 
 header h1 {
-    font-size: 50pt;
+    font-size: 70pt;
     color:white;
     font-weight: bolder;
     font-family: 'Tangerine', cursive;
     padding: 20px;
-    margin-bottom: 20pt;
+    margin-bottom: 10pt;
     flex-wrap: wrap;
     margin-left: 15px;
 }
@@ -41,6 +41,8 @@ header h1 {
     float: right;
     color:white;
     margin:0;
+    font-family: 'Old Standard TT', serif;
+    font-size: 20px;
 }
 
 /* recipe container appears centered over text*/
@@ -48,6 +50,7 @@ header h1 {
     position: relative;
     text-align: center;
     color:black;
+    margin-top: 35px;
 }
 
 #recipes {
@@ -57,10 +60,11 @@ header h1 {
     padding: 20px;
     visibility: hidden;
     margin-bottom: 35px;
+    font-family: 'Old Standard TT', serif;
 }
 .move {
     height: 600px;
-    width: 600px;
+    width: 90%;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -70,7 +74,7 @@ header h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-top: 50%;
+    padding-top: 30%;
 }
 
 h2 {
@@ -107,7 +111,7 @@ margin-bottom: 15px;
 }
 
 #close-btn{
-    position: absolute;
+    position: relative;
     background: rgb(209, 209, 209);
     border: 2px solid rgb(59, 59, 59);
     color: rgb(59, 59, 59);
@@ -118,7 +122,7 @@ margin-bottom: 15px;
     font-weight: bold;
     font-size:x-small;
     cursor: pointer;
-    margin-left: 250px;
+    margin-left: 95%;
     outline: none;
 }
 
@@ -139,9 +143,37 @@ margin-bottom: 15px;
         align-items: center;
     }
 
-  }
+}
 
   @media screen and (max-width: 450px) {
     #options {
-        justify-content: center;}
+        padding: 5px;
+        font-size: 10px;
+        justify-content: space-evenly;}
+    
+    header h1{
+
+        font-size: 55px;
+        margin-bottom: 0px;
     }
+    .centered{
+
+        margin-top: 200px;
+       
+    }
+    #divButtons{
+        font-size: 12px;
+    }
+
+    .p-10{
+
+        padding: 0.5rem
+    }
+
+    #recipes{
+
+        margin-top: 55px;
+    }
+  }
+ 
+  
