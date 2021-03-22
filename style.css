@@ -79,19 +79,11 @@ header h1 {
 }
 
 .centered {
-
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding-top: 30%;
-
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-    padding-top: 50%;
-
 }
 
 h2 {
@@ -99,16 +91,8 @@ h2 {
     font-weight: bold;
 }
 
-#name {
+#name, #ingredients, #instructions, #drinkName, #drinkIngredients, #drinkInstructions {
 margin-bottom: 15px;
-}
-
-#ingredients{
-margin-bottom: 15px;
-}
-
-#instructions {
-    margin-bottom: 15px;
 }
 
 #foodImg {
