@@ -326,8 +326,7 @@ function getBourbon(event) {
         const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
         const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
         const ifour = data.drinks[0].strMeasure4 + ' ' + data.drinks[0].strIngredient4
-        const ifive = data.drinks[0].strMeasure5 + ' ' + data.drinks[0].strIngredient5
-drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour)
 getRecipes()      
 })
 }
@@ -408,9 +407,7 @@ function getBrandy(event) {
         const ione = data.drinks[0].strMeasure1 + ' ' + data.drinks[0].strIngredient1
         const itwo = data.drinks[0].strMeasure2 + ' ' + data.drinks[0].strIngredient2
         const ithree = data.drinks[0].strMeasure3 + ' ' + data.drinks[0].strIngredient3
-        const ifour = data.drinks[0].strMeasure4 + ' ' + data.drinks[0].strIngredient4
-        const ifive = data.drinks[0].strMeasure5 + ' ' + data.drinks[0].strIngredient5
-drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree, ', ', ifour,', ', ifive)
+drinkIngredients.append('Ingredients: ',ione, ', ', itwo, ', ', ithree)
 getRecipes()      
 })
 }
